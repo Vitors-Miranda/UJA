@@ -1,3 +1,8 @@
+/* Práctica: Aplicación web cliente básica
+Autor: Vitor Samuel Miranda de Souza 
+Curso: Ingeniería Telemática
+Asignatura: Sistemas y Aplicaciones Telemática */
+
 *{
     padding: 0;
     margin: 0;
@@ -17,6 +22,9 @@ body{
 }
 .flex-column{
     flex-direction: column;
+}
+.tab{
+    cursor: pointer;
 }
 section{
     width: 45%;

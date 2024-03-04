@@ -1,3 +1,9 @@
+<!-- 
+    Práctica: Aplicación web cliente básica
+    Autor: Vitor Samuel Miranda de Souza 
+    Curso: Ingeniería Telemática
+    Asignatura: Sistemas y Aplicaciones Telemática
+-->
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,9 +18,11 @@
     </header>
     <nav class=" ">
         <ul class="center">
-            <li id="tab-login">Inicio </li>
-            <li id="tab-registro">Registro</li>
-            <li id="tab-sobre">Acerca de</li>
+            <li class="tab" id="tab-login">Inicio </li>
+            <li class="tab" id="tab-registro">Registrarse</li>
+            <li class="tab" id="tab-blog">Blog </li>
+            <li class="tab" id="tab-nueva">Nueva entrada </li>
+            <li class="tab" id="tab-sobre">Acerca de</li>
         </ul>
     </nav>
     <main class="center ">
@@ -22,7 +30,7 @@
             <h2>Login de usuario</h2>
                     </div>
             <div class="center flex-column w-100">
-                <form method="POST" action=": http://labtelema.ujaen.es/form.php" class="w-100 center flex-column">
+                <form method="PUT" action="http://labtelema.ujaen.es:8083/login" class="w-100 center flex-column">
                         <input type="text" name="user" placeholder="user" minlength="4" maxlength="16" required>
                         <input type="password" name="password" placeholder="password"  minlength="4" maxlength="16" required>
                         <button type="submit" class="btn">Enviar</button>
@@ -33,8 +41,8 @@
             <h2>Registro de usuario</h2>
                     </div>
             <div class="center flex-column w-100">
-                <form method="POST" action=": http://labtelema.ujaen.es/form.php" class="w-100 center flex-column">
-                        <input type="text" name="nick" placeholder="nick" minlength="4" maxlength="16" checked>
+                <form method="POST" action=": http://labtelema.ujaen.es:8083/user" class="w-100 center flex-column">
+                        <input type="text" name="user" placeholder="user" minlength="4" maxlength="16" checked>
                         <input type="email" name="email" placeholder="email" checked>
                         <input type="text" name="name" placeholder="name" maxlength="32" checked>
                         <input type="text" name="surname" placeholder="surname">
@@ -53,7 +61,7 @@
                     Nacionalidad: Brasileño <br>
                     TIE: E26357607
                 </p>
-                <a href="https://github.com/Vitors-Miranda/Site-Siga" class="aceso">Aceso ao github</a>
+                <a href="https://github.com/Vitors-Miranda/Site-Siga" class="aceso" target="_blank">Aceso ao github</a>
             </div>
         </section>
         <aside class="center flex-column">
@@ -61,7 +69,7 @@
             <p class="text">
                 Practica con funcion de ensinar sobre los elementos html y el uso de css para criacion de páginas web. Este es un simples formuário de primera classe.
             </p>
-            <a href="https://www.ujaen.es/" class="aceso">Aceso ao platea</a>
+            <a href="https://www.ujaen.es/" class="aceso" target="_blank">Aceso ao platea</a>
         </aside>
     </main>
     <footer class="center">
