@@ -21,7 +21,7 @@
             <li class="tab" id="tab-login">Inicio </li>
             <li class="tab" id="tab-registro">Registrarse</li>
             <li class="tab" id="tab-blog">Blog </li>
-            <li class="tab" id="tab-nueva">Nueva entrada </li>
+            <li class="tab" id="tab-add">Nueva entrada </li>
             <li class="tab" id="tab-sobre">Acerca de</li>
         </ul>
     </nav>
@@ -30,7 +30,7 @@
             <h2>Login de usuario</h2>
                     </div>
             <div class="center flex-column w-100">
-                <form method="PUT" action="http://labtelema.ujaen.es:8083/login" class="w-100 center flex-column">
+                <form method="post" action="http://labtelema.ujaen.es:8083/login" class="w-100 center flex-column" id="login-form">
                         <input type="text" name="user" placeholder="user" minlength="4" maxlength="16" required>
                         <input type="password" name="password" placeholder="password"  minlength="4" maxlength="16" required>
                         <button type="submit" class="btn">Enviar</button>
@@ -41,13 +41,13 @@
             <h2>Registro de usuario</h2>
                     </div>
             <div class="center flex-column w-100">
-                <form method="POST" action=": http://labtelema.ujaen.es:8083/user" class="w-100 center flex-column">
+                <form method="PUT" action="http://labtelema.ujaen.es:8083/user" class="w-100 center flex-column">
                         <input type="text" name="user" placeholder="user" minlength="4" maxlength="16" checked>
-                        <input type="email" name="email" placeholder="email" checked>
+                        <input type="password" name="password" placeholder="password"  minlength="4" maxlength="16" checked>
                         <input type="text" name="name" placeholder="name" maxlength="32" checked>
                         <input type="text" name="surname" placeholder="surname">
-                        <input type="password" name="password" placeholder="password"  minlength="4" maxlength="16" checked>
-                        <input type="password" name="password-check" placeholder="password"  minlength="4" maxlength="16" checked>
+                        <input type="email" name="email" placeholder="email" checked>
+                        <!-- <input type="password" name="password-check" placeholder="password"  minlength="4" maxlength="16" checked> -->
                         <button type="submit" class="btn">Enviar</button>
                 </form>
             </div>
@@ -61,8 +61,37 @@
                     Nacionalidad: Brasileño <br>
                     TIE: E26357607
                 </p>
-                <a href="https://github.com/Vitors-Miranda/Site-Siga" class="aceso" target="_blank">Aceso ao github</a>
+                <a href="https://github.com/Vitors-Miranda" class="aceso" target="_blank">Aceso ao github</a>
             </div>
+        </section>
+        <section class="center flex-column" id="blog">
+            <button class="btn">Descargar</button>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Data</th>
+                        <th>Comentário</th> 
+                    </tr>
+                    
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+        <section class="center flex-column" id="add">
+            <h2>Registro de usuario</h2>
+        </div>
+        <div class="center flex-column w-100">
+            <form method="put" action="http://labtelema.ujaen.es:8083/blog" class="w-100 center flex-column">
+                    <input type="text" name="title" placeholder="título" minlength="4" maxlength="16" checked>
+                    <input type="date" name="date" placeholder="fecha"  minlength="4" maxlength="16" checked>
+                    <label for="comment">Comentário</label>
+                    <textarea name="comment" id="comment" cols="30" rows="5" checked></textarea>
+                    <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
         </section>
         <aside class="center flex-column">
             <img src="logo.png" alt="" height="150">

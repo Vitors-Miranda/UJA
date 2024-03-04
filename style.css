@@ -101,3 +101,15 @@ ul{
 .btn:hover{
     background-color: rgb(24, 41, 24);
 }
+#comment{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.table{
+    width: 100%;
+    margin: 10px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #ebebeb;
+}
