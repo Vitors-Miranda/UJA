@@ -108,8 +108,20 @@ ul{
 .table{
     width: 100%;
     margin: 10px;
+    box-shadow: 2px 2px 10px 5px rgb(230, 229, 229);
+    padding: 10px;
+    max-height: 40vh;
+    overflow-y: auto;
+    text-align: center;
 }
-
+.table tr{
+    transition: all 0.5s;
+    cursor: pointer;
+}
 .table tr:nth-child(even) {
     background-color: #ebebeb;
+}
+
+.table tr:hover {
+    background-color: #dedddd;
 }
