@@ -125,3 +125,12 @@ ul{
 .table tr:hover {
     background-color: #dedddd;
 }
+.warning{
+    background-color: rgb(247, 227, 119);
+    min-height: 50px;
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}

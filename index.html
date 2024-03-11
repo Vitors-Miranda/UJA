@@ -65,7 +65,7 @@
         </section>
         <section class="center flex-column" id="blog">
             <h2>Entradas del blog</h2>
-            <button class="btn">Descargar</button>
+            <!-- <button class="btn">Descargar</button> -->
             <table class="table">
                 <thead>
                     <tr>
@@ -86,7 +86,7 @@
             <form id="blog-form" class="w-100 center flex-column">
                     <input type="hidden" name="user" id="user-register">
                     <input type="text" name="title" placeholder="título" minlength="4" maxlength="16" checked>
-                    <input type="date" name="date" placeholder="fecha"  minlength="4" maxlength="16" checked>
+                    <input type="date" name="date" placeholder="fecha" checked>
                     <label for="comment">Comentário</label>
                     <textarea name="comment" id="comment" cols="30" rows="5" checked></textarea>
                     <button type="submit" class="btn">Enviar</button>
@@ -94,12 +94,13 @@
         </div>
         </section>
         <aside class="center flex-column">
-            <img src="logo.png" alt="" height="150">
-            <p class="text">
-                Practica con funcion de ensinar sobre los elementos html y el uso de css para criacion de páginas web. Este es un simples formuário de primera classe.
+            <p class="text" id="aside">
+                Ingrese el usuario y contraseña registrados en el sistema. Si no tiene una cuenta, cree una en la sección "registrarse".
             </p>
-            <a href="https://www.ujaen.es/" class="aceso" target="_blank">Aceso ao platea</a>
         </aside>
+        <div class="warning center" id="warning">
+
+        </div>
     </main>
     <footer class="center">
         <p>Vitor Samuel Miranda de Souza - Telemática</p>
