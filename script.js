@@ -13,6 +13,8 @@ const login = document.getElementById("login"),
     register_form = document.getElementById("register-form"),
     tbody = document.getElementById("table-body"),
     aside = document.getElementById("aside"),
+    blogtable = document.getElementById("blogtable"),
+    btndescargar = document.getElementById("btndescargar"),
     warning = document.getElementById("warning"),
     btn_sobre = document.getElementById("tab-sobre")
 
@@ -35,7 +37,7 @@ function Home() {
     Ingrese el usuario y contraseña registrados en el sistema. Si no tiene una cuenta, cree una en la sección "registrarse".
     `
     warning.style = "display: none"
-
+    
 }
 
 // Sign In
@@ -69,8 +71,12 @@ function Blog() {
     aside.innerText= `
     Este servicio permite obtener todas las entradas del blog del usuario logado.
     `
+    blogtable.style="display: none"
 }
-
+// Show the list
+btndescargar.addEventListener("click", () =>{
+    blogtable.style="display: table"
+})
 // Add new blog entries
 function Add() {
     Clear()
