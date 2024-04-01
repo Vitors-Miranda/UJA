@@ -3,6 +3,7 @@ const login = document.getElementById("login"),
     sobre = document.getElementById("sobre"),
     blog = document.getElementById("blog"),
     add = document.getElementById("add"),
+
     btn_registro = document.getElementById("tab-registro"),
     btn_login = document.getElementById("tab-login"),
     user_register = document.getElementById("user-register"),
@@ -73,10 +74,12 @@ function Blog() {
     `
     blogtable.style="display: none"
 }
+
 // Show the list
 btndescargar.addEventListener("click", () =>{
     blogtable.style="display: table"
 })
+
 // Add new blog entries
 function Add() {
     Clear()
@@ -105,7 +108,7 @@ login_form.addEventListener("submit", (e) => {
     })
         .then(data => {
             if(data.status == 401 || data.status == 400){
-                Warning("Usuario ou senha incorreto.")
+                Warning("Usuario o contraseña incorreta.")
             }
             if (data.status == 200) {
                 btn_login.style = "display: none"
@@ -136,7 +139,7 @@ blog_form.addEventListener("submit", (e) => {
         },
         body: JSON.stringify(datos)
     })
-        .then(data => {
+        .then(() => {
                 List(datos.user)
                 Blog()
         });
@@ -153,7 +156,7 @@ register_form.addEventListener("submit", (e) => {
         name: datos.get("name"),
         surname: datos.get("surname"),
         email: datos.get("email"),
-    };
+    }
     fetch("http://labtelema.ujaen.es:8083/user", {
         method: "PUT",
         headers: {
@@ -161,9 +164,16 @@ register_form.addEventListener("submit", (e) => {
         },
         body: JSON.stringify(datos)
     })
-        .then(data => {
-            register_form.reset();
-            Home()
+        .then((data) => {
+            if(data.status == 403){
+                Warning("Usuario ya registrado.")
+            }
+            if(data.status == 201){
+                Warning("Usuario registrado con exito.")
+                register_form.reset();
+                Home()
+            }
+            
         });
 })
 

@@ -111,9 +111,11 @@ ul{
     margin: 10px;
     box-shadow: 2px 2px 10px 5px rgb(230, 229, 229);
     padding: 10px;
+    text-align: center;
+}
+.scroll{
     max-height: 40vh;
     overflow-y: auto;
-    text-align: center;
 }
 .table tr{
     transition: all 0.5s;
