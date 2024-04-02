@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="carga">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="description" type="xs:string"/>
+                <xs:element name="origin" type="xs:string"/>
+                <xs:element name="fecha-recogida" type="xs:date"/>
+                <xs:element name="hora-recogida" type="xs:time"/>
+                <xs:element name="destino" type="xs:string"/>
+                <xs:element name="fecha-entrega" type="xs:date"/>
+                <xs:element name="hora-entrega" type="xs:time"/>
+                <xs:element name="articulo">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:string"/>
+                            <xs:element name="alto" type="xs:decimal"/>
+                            <xs:element name="ancho" type="xs:decimal"/>
+                            <xs:element name="profundo" type="xs:decimal"/>
+                            <xs:element name="peso" type="xs:decimal"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

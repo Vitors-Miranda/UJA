@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<carga>
+    <desciption></desciption>
+    
+    <!-- Recogida -->
+    <origin>Linares</origin>
+    <fecha-recogida>2024-04-02</fecha-recogida>
+    <hora-recogida>23:00</hora-recogida>
+
+    <!-- Entrega -->
+    <destino>Jaen</destino>
+    <fecha-entrega>2024-07-02</fecha-entrega>
+    <hora-entrega>08:00</hora-entrega>
+
+    <!-- Artículos -->
+    <articulo>
+        <id>123</id>
+        <alto>1.2</alto>
+        <ancho>1.2</ancho>
+        <profundo>1.2</profundo>
+        <peso>500</peso>
+    </articulo>
+</carga>
