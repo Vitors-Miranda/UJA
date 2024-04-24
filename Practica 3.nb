@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[    130031,       2714]
-NotebookOptionsPosition[    120592,       2557]
-NotebookOutlinePosition[    121347,       2582]
-CellTagsIndexPosition[    121304,       2579]
+NotebookDataLength[    142745,       3074]
+NotebookOptionsPosition[    130654,       2878]
+NotebookOutlinePosition[    131407,       2903]
+CellTagsIndexPosition[    131364,       2900]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2413,7 +2413,203 @@ Cell[TextData[{
    3.848636455947341*^9, 3.848636462419875*^9}, {3.84863683163444*^9, 
    3.848636888853529*^9}, {3.9155123057369227`*^9, 3.915512314095307*^9}},
  Background->GrayLevel[
-  0.85],ExpressionUUID->"a4f546bd-629b-45fb-b73d-f2893a27832a"]
+  0.85],ExpressionUUID->"a4f546bd-629b-45fb-b73d-f2893a27832a"],
+
+Cell[TextData[{
+ "1. Cuando \[Alpha] = 1, la serie ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+     FractionBox["1", 
+      SuperscriptBox["n", "\[Alpha]"]]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"1", "+", 
+        FractionBox["1", 
+         SuperscriptBox["2", "\[Alpha]"]], "+", 
+        FractionBox["1", 
+         SuperscriptBox["3", "\[Alpha]"]], "+"}], "..."}], "+", 
+      FractionBox["1", 
+       SuperscriptBox["n", "\[Alpha]"]], "+"}], "..."}]}], TraditionalForm]],
+  ExpressionUUID->"add0120c-2756-406c-8bf3-ac81ae007010"],
+ " que se llama serie arm\[OAcute]nica principal. Veamos que, efectivamente, \
+esa serie diverge:"
+}], "Text",
+ CellChangeTimes->{{3.9229328076743107`*^9, 3.9229329121507363`*^9}, {
+  3.922932945872684*^9, 3.9229329912885914`*^9}, {3.9229330446252356`*^9, 
+  3.9229330453774824`*^9}},ExpressionUUID->"25753ad3-00a3-4705-a09f-\
+65c83f319e4a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", "n"]}]], "Input",
+ CellChangeTimes->{{3.922933003173554*^9, 3.9229330198105345`*^9}, 
+   3.9229330522884636`*^9},
+ CellLabel->"In[2]:=",ExpressionUUID->"777a632b-5a2b-4be4-a454-ca12b7061acc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\"Sum does not converge.\"", 2, 2, 2, 20441470846113355062, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.9229330209805803`*^9, 3.9229330553324556`*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[2]:=",ExpressionUUID->"84200b91-217c-4306-8dd2-168dd60d62ac"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", "n"]}]], "Output",
+ CellChangeTimes->{3.9229330210723987`*^9, 3.9229330553444557`*^9},
+ CellLabel->"Out[2]=",ExpressionUUID->"f6e55834-4327-4323-a4cd-b328d42b9a44"]
+}, Open  ]],
+
+Cell[TextData[{
+ "2. Cuando \[Alpha] < 1, la serie ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+     FractionBox["1", 
+      SuperscriptBox["n", "\[Alpha]"]]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"1", "+", 
+        FractionBox["1", 
+         SuperscriptBox["2", "\[Alpha]"]], "+", 
+        FractionBox["1", 
+         SuperscriptBox["3", "\[Alpha]"]], "+"}], "..."}], "+", 
+      FractionBox["1", 
+       SuperscriptBox["n", "\[Alpha]"]], "+"}], "..."}]}], TraditionalForm]],
+  ExpressionUUID->"4ca9369e-d8c9-4f40-9248-d7f9cf5abb66"],
+ " debe ser tambi\[EAcute]n divergente (no convergente). Veamos que esto es \
+cierto. Supongamos  \[Alpha] = 1/2, entonces, la serie queda de la forma:\n"
+}], "Text",
+ CellChangeTimes->{{3.922933027517517*^9, 3.9229331951333637`*^9}, {
+  3.9229332578137045`*^9, 
+  3.9229332585579243`*^9}},ExpressionUUID->"043c492c-3413-49bd-8dc5-\
+ed8eb2a145dd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", 
+   SqrtBox["n"]]}]], "Input",
+ CellChangeTimes->{{3.9229332077195954`*^9, 3.922933224068095*^9}},
+ CellLabel->"In[3]:=",ExpressionUUID->"c39eb6b5-297b-43f9-9a8a-b4d025210743"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Sum", "div", "\"Sum does not converge.\"", 2, 3, 3, 20441470846113355062, 
+   "Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.922933226850443*^9},
+ CellLabel->
+  "Durante la evaluaci\[OAcute]n de \
+In[3]:=",ExpressionUUID->"64590000-9817-40c8-b8c9-e7f90871520a"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", 
+   SqrtBox["n"]]}]], "Output",
+ CellChangeTimes->{3.9229332268654423`*^9},
+ CellLabel->"Out[3]=",ExpressionUUID->"57c16fcd-f04f-4252-8e82-03148316f259"]
+}, Open  ]],
+
+Cell[TextData[{
+ "3. Cuando \[Alpha] > 1, la serie ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+     FractionBox["1", 
+      SuperscriptBox["n", "\[Alpha]"]]}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"1", "+", 
+        FractionBox["1", 
+         SuperscriptBox["2", "\[Alpha]"]], "+", 
+        FractionBox["1", 
+         SuperscriptBox["3", "\[Alpha]"]], "+"}], "..."}], "+", 
+      FractionBox["1", 
+       SuperscriptBox["n", "\[Alpha]"]], "+"}], "..."}]}], TraditionalForm]],
+  ExpressionUUID->"5cc9289a-1726-459f-becb-2c021c5a301c"],
+ " debe ser convergente, veamos que esto es cierto. Supongamos \[Alpha] = 2, \
+entonces ka serie queda de la forma:"
+}], "Text",
+ CellChangeTimes->{{3.922933244691845*^9, 
+  3.922933308862012*^9}},ExpressionUUID->"745133b5-0be0-4ab6-9ee0-\
+49734129af3f"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", 
+   SuperscriptBox["n", "2"]]}]], "Input",
+ CellChangeTimes->{{3.922933320262498*^9, 3.9229333252384872`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"99c1b04f-ffc3-450c-9d48-dedb046f6281"],
+
+Cell[BoxData[
+ FractionBox[
+  SuperscriptBox["\[Pi]", "2"], "6"]], "Output",
+ CellChangeTimes->{3.922933325871422*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"3382d708-5f57-4255-bdfe-0abe948ad049"]
+}, Open  ]],
+
+Cell["\<\
+Luego, efectivamente, es convergente.
+Probemos con \[Alpha] = 3\
+\>", "Text",
+ CellChangeTimes->{{3.922933380336131*^9, 3.9229334118533225`*^9}, {
+  3.9229335009733815`*^9, 3.922933504141847*^9}, {3.922933546333322*^9, 
+  3.9229335646002913`*^9}},ExpressionUUID->"f3dabb0f-c8fb-452d-aa58-\
+97281b14eb25"],
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  FractionBox["1", 
+   SuperscriptBox["n", "3"]]}]], "Input",
+ CellChangeTimes->{{3.922933574265249*^9, 3.9229335743662357`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"269dcfed-79e6-4012-9afb-a2ebb9fc5fb9"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Zeta", "[", "3", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.9229335888372555`*^9, 3.922933593461928*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"7c28a2b9-55bc-423f-97ad-80bf460819e1"],
+
+Cell[BoxData["1.2020569031595942`"], "Output",
+ CellChangeTimes->{3.922933593798147*^9},
+ CellLabel->"Out[7]=",ExpressionUUID->"720d2d7b-a66f-4aaa-95c3-669e9297e613"]
+}, Open  ]]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2551,12 +2747,137 @@ Cell[TextData[Cell[BoxData[
   3.915512667929358*^9}},
  TextAlignment->Center,
  Background->GrayLevel[
-  0.85],ExpressionUUID->"1436ffc3-d902-4c92-b6cd-0d50efb11990"]
+  0.85],ExpressionUUID->"1436ffc3-d902-4c92-b6cd-0d50efb11990"],
+
+Cell[TextData[{
+ "Podemos expresar esta serie mediante el t\[EAcute]rmino general ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox["1", 
+     SqrtBox["n"]], 
+    RowBox[{"(", 
+     RowBox[{"-", "1"}], ")"}]}], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "43f7cb5c-58bb-4fb5-8d5b-f1078c58a0d8"],
+ "^(n - 1). Comprobemos esto mismo:\n"
+}], "Text",
+ CellChangeTimes->{{3.9229336641460285`*^9, 3.922933683132723*^9}, {
+  3.9229337170050097`*^9, 
+  3.922933799060792*^9}},ExpressionUUID->"c2990e29-d030-4dda-add3-\
+d86e490bc911"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{
+    FormBox[
+     FractionBox["1", 
+      SqrtBox["n"]],
+     TraditionalForm], 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"-", "1"}], ")"}], 
+     RowBox[{"n", "-", "1"}]]}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.922933800520912*^9, 3.9229338416846633`*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"c7b0c83c-239f-43af-8fad-307a13536af6"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   RowBox[{"-", 
+    FractionBox["1", 
+     SqrtBox["2"]]}], ",", 
+   FractionBox["1", 
+    SqrtBox["3"]], ",", 
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], ",", 
+   FractionBox["1", 
+    SqrtBox["5"]], ",", 
+   RowBox[{"-", 
+    FractionBox["1", 
+     SqrtBox["6"]]}], ",", 
+   FractionBox["1", 
+    SqrtBox["7"]], ",", 
+   RowBox[{"-", 
+    FractionBox["1", 
+     RowBox[{"2", " ", 
+      SqrtBox["2"]}]]}], ",", 
+   FractionBox["1", "3"], ",", 
+   RowBox[{"-", 
+    FractionBox["1", 
+     SqrtBox["10"]]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.9229338335480795`*^9, 3.9229338420010023`*^9}},
+ CellLabel->"Out[9]=",ExpressionUUID->"65b68f45-9e04-445d-b23a-e75ae66c4385"]
+}, Open  ]],
+
+Cell["Veamos si esa serie es convergente:", "Text",
+ CellChangeTimes->{{3.9229338750502615`*^9, 
+  3.9229338933877783`*^9}},ExpressionUUID->"fb20fb25-eb6b-4b64-9b8f-\
+7fc3a21c1543"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  UnderoverscriptBox["\[Sum]", 
+   RowBox[{"n", "=", "1"}], "\[Infinity]"], 
+  RowBox[{
+   FormBox[
+    FractionBox["1", 
+     SqrtBox["n"]],
+    TraditionalForm], 
+   SuperscriptBox[
+    RowBox[{"(", 
+     RowBox[{"-", "1"}], ")"}], 
+    RowBox[{"n", "-", "1"}]]}]}]], "Input",
+ CellChangeTimes->{{3.9229339455146704`*^9, 3.9229339489565187`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"06ca14ad-6f53-4973-8a78-6024d59d3325"],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", 
+      SqrtBox["2"]}], ")"}], " ", 
+    RowBox[{"Zeta", "[", 
+     FractionBox["1", "2"], "]"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.9229339511918554`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"6f3db79c-d56c-463a-82a0-3522b57c1755"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.922933954775493*^9, 3.922933956235701*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"f10c9231-47b7-4b27-a310-3452053fa0f8"],
+
+Cell[BoxData["0.604898643421631`"], "Output",
+ CellChangeTimes->{3.922933956814887*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"7f3b5213-1058-4aa4-bb40-726c754173c1"]
+}, Open  ]],
+
+Cell["Luego, efectivamente, la serie es convergente", "Text",
+ CellChangeTimes->{{3.9229339624408803`*^9, 
+  3.922933986874508*^9}},ExpressionUUID->"98f68811-4f94-412d-ab46-\
+b68449376683"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.922933994974126*^9, 3.922934002356427*^9}, 
+   3.9229340747959633`*^9},ExpressionUUID->"65d3879b-09d4-46a6-b512-\
+44c907dcd99c"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440., 747.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{1428., 741.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{32000, 32000},
 PrintingOptions->{"Magnification"->1.,
@@ -2702,18 +3023,57 @@ Cell[110149, 2315, 991, 26, 54, "Text",ExpressionUUID->"6cd82d83-e1fa-4a14-b6d4-
 Cell[CellGroupData[{
 Cell[111177, 2346, 1552, 22, 67, "Section",ExpressionUUID->"7ab3cc2b-ef3a-4d11-900b-97f6ede5a967"],
 Cell[112732, 2370, 970, 26, 54, "Text",ExpressionUUID->"399ace3c-cdba-48c6-97b0-0b5155c16b66"],
-Cell[113705, 2398, 774, 17, 51, "Text",ExpressionUUID->"a4f546bd-629b-45fb-b73d-f2893a27832a"]
+Cell[113705, 2398, 774, 17, 51, "Text",ExpressionUUID->"a4f546bd-629b-45fb-b73d-f2893a27832a"],
+Cell[114482, 2417, 995, 27, 38, "Text",ExpressionUUID->"25753ad3-00a3-4705-a09f-65c83f319e4a"],
+Cell[CellGroupData[{
+Cell[115502, 2448, 311, 7, 52, "Input",ExpressionUUID->"777a632b-5a2b-4be4-a454-ca12b7061acc"],
+Cell[115816, 2457, 344, 8, 28, "Message",ExpressionUUID->"84200b91-217c-4306-8dd2-168dd60d62ac"],
+Cell[116163, 2467, 284, 6, 56, "Output",ExpressionUUID->"f6e55834-4327-4323-a4cd-b328d42b9a44"]
+}, Open  ]],
+Cell[116462, 2476, 1001, 27, 61, "Text",ExpressionUUID->"043c492c-3413-49bd-8dc5-ed8eb2a145dd"],
+Cell[CellGroupData[{
+Cell[117488, 2507, 296, 7, 53, "Input",ExpressionUUID->"c39eb6b5-297b-43f9-9a8a-b4d025210743"],
+Cell[117787, 2516, 318, 8, 28, "Message",ExpressionUUID->"64590000-9817-40c8-b8c9-e7f90871520a"],
+Cell[118108, 2526, 273, 7, 56, "Output",ExpressionUUID->"57c16fcd-f04f-4252-8e82-03148316f259"]
+}, Open  ]],
+Cell[118396, 2536, 908, 26, 38, "Text",ExpressionUUID->"745133b5-0be0-4ab6-9ee0-49734129af3f"],
+Cell[CellGroupData[{
+Cell[119329, 2566, 308, 7, 52, "Input",ExpressionUUID->"99c1b04f-ffc3-450c-9d48-dedb046f6281"],
+Cell[119640, 2575, 196, 4, 50, "Output",ExpressionUUID->"3382d708-5f57-4255-bdfe-0abe948ad049"]
+}, Open  ]],
+Cell[119851, 2582, 314, 7, 58, "Text",ExpressionUUID->"f3dabb0f-c8fb-452d-aa58-97281b14eb25"],
+Cell[120168, 2591, 308, 7, 52, "Input",ExpressionUUID->"269dcfed-79e6-4012-9afb-a2ebb9fc5fb9"],
+Cell[CellGroupData[{
+Cell[120501, 2602, 231, 4, 43, InheritFromParent,ExpressionUUID->"7c28a2b9-55bc-423f-97ad-80bf460819e1"],
+Cell[120735, 2608, 166, 2, 32, "Output",ExpressionUUID->"720d2d7b-a66f-4aaa-95c3-669e9297e613"]
+}, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[114516, 2420, 357, 6, 67, "Section",ExpressionUUID->"db2729bd-bcea-49ac-93a4-c05f05ba4fea"],
-Cell[114876, 2428, 628, 10, 51, "Text",ExpressionUUID->"5b9319da-20dd-47dc-a4e8-be71aaca0d4e"],
-Cell[115507, 2440, 1090, 29, 72, "Text",ExpressionUUID->"d3e7b454-77c6-48aa-a4a0-f522639cf8dd"],
-Cell[116600, 2471, 735, 15, 51, "Text",ExpressionUUID->"dea50ee1-7e85-4f72-a8f8-2da15f2ffe21"]
+Cell[120950, 2616, 357, 6, 67, "Section",ExpressionUUID->"db2729bd-bcea-49ac-93a4-c05f05ba4fea"],
+Cell[121310, 2624, 628, 10, 51, "Text",ExpressionUUID->"5b9319da-20dd-47dc-a4e8-be71aaca0d4e"],
+Cell[121941, 2636, 1090, 29, 72, "Text",ExpressionUUID->"d3e7b454-77c6-48aa-a4a0-f522639cf8dd"],
+Cell[123034, 2667, 735, 15, 51, "Text",ExpressionUUID->"dea50ee1-7e85-4f72-a8f8-2da15f2ffe21"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[117372, 2491, 1859, 26, 67, "Section",ExpressionUUID->"d6a72624-3fa2-4f3b-be2f-5401ea733e63"],
-Cell[119234, 2519, 237, 4, 51, "Text",ExpressionUUID->"0fbda4a8-f436-45e8-94f5-1bf2b53cddf2"],
-Cell[119474, 2525, 1090, 28, 57, "Text",ExpressionUUID->"1436ffc3-d902-4c92-b6cd-0d50efb11990"]
+Cell[123806, 2687, 1859, 26, 67, "Section",ExpressionUUID->"d6a72624-3fa2-4f3b-be2f-5401ea733e63"],
+Cell[125668, 2715, 237, 4, 51, "Text",ExpressionUUID->"0fbda4a8-f436-45e8-94f5-1bf2b53cddf2"],
+Cell[125908, 2721, 1090, 28, 57, "Text",ExpressionUUID->"1436ffc3-d902-4c92-b6cd-0d50efb11990"],
+Cell[127001, 2751, 556, 16, 64, "Text",ExpressionUUID->"c2990e29-d030-4dda-add3-d86e490bc911"],
+Cell[CellGroupData[{
+Cell[127582, 2771, 487, 15, 66, "Input",ExpressionUUID->"c7b0c83c-239f-43af-8fad-307a13536af6"],
+Cell[128072, 2788, 729, 26, 52, "Output",ExpressionUUID->"65b68f45-9e04-445d-b23a-e75ae66c4385"]
+}, Open  ]],
+Cell[128816, 2817, 181, 3, 35, "Text",ExpressionUUID->"fb20fb25-eb6b-4b64-9b8f-7fc3a21c1543"],
+Cell[CellGroupData[{
+Cell[129022, 2824, 451, 14, 53, "Input",ExpressionUUID->"06ca14ad-6f53-4973-8a78-6024d59d3325"],
+Cell[129476, 2840, 361, 11, 48, "Output",ExpressionUUID->"6f3db79c-d56c-463a-82a0-3522b57c1755"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[129874, 2856, 199, 3, 43, "Input",ExpressionUUID->"f10c9231-47b7-4b27-a310-3452053fa0f8"],
+Cell[130076, 2861, 166, 2, 32, "Output",ExpressionUUID->"7f3b5213-1058-4aa4-bb40-726c754173c1"]
+}, Open  ]],
+Cell[130257, 2866, 189, 3, 35, "Text",ExpressionUUID->"98f68811-4f94-412d-ab46-b68449376683"],
+Cell[130449, 2871, 177, 3, 28, "Input",ExpressionUUID->"65d3879b-09d4-46a6-b512-44c907dcd99c"]
 }, Open  ]]
 }, Open  ]]
 }
